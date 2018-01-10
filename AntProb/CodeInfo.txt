@@ -1,0 +1,26 @@
+Code info:
+
+Classes: AntSolver.cs, Node.cs, StepType.cs
+
+AntSolver.cs: 
+main class where all of the algorithmic stuff is happening along with drawing/updating the grid
+
+setprobs(): function housing the algorithm for calculating the probability of each node(square)
+
+button1_click(): event handler that structures the 2D array and draws the grid
+
+updatecolor(): sets/updates the color of each node
+
+setSucc(): gets all of the adjacent nodes for the node and sets their references
+
+setfoodpath(): sets a path to the nest for each of the food cells
+
+timer1_tick(): timer function which will be called every .5 secs which calls the setprobs()
+
+all of the other ones are either self exp or serve no purpose to the submitted version
+
+Node.cs:
+node/square object for each cell in the grid with bunch of attributes
+
+StepType.cs:
+an object that's part of each node in the path to the nest (overlapping paths will have multiple StepType objects for those nodes). It identifies the ant in the path from which food cell its going and how many steps to the nest.
